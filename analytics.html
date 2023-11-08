@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="navigation1.css">
+    <link rel="stylesheet" href="analytics.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -38,7 +39,7 @@
                     <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-bell icon'></i>
-                            <span class="text nav-text" onclick="notification()">Notification</span>
+                            <span class="text nav-text">Notification</span>
                         </a>
                     </li>
                     <li class="nav-link">
@@ -50,15 +51,9 @@
                     <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-heart icon'></i>
-                            <span class="text nav-text" onclick="likes()">Likes</span>
+                            <span class="text nav-text">Likes</span>
                         </a>
                     </li>
-                    <!-- <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-wallet icon'></i>
-                            <span class="text nav-text">Wallets</span>
-                        </a>
-                    </li> -->
                     <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-home-alt icon'></i>
@@ -88,41 +83,16 @@
         </div>
     </nav>
     <section class="home">
-        <div class="text">Dashboard</div>
-        <div class="dashboard">
-            <div class="container">
-                <div>
-                    <div class="cylinder">
-                        <div class="fill-level" id="waste-level"></div>
-                      </div>
-                      <div class="error-message" id="error-message"></div>
-                      <br>
-                      <div> 
-                          <input type="checkbox" id="checkboxInput">
-                          <label for="checkboxInput" class="toggleSwitch">
-                          </label>
-                      </div>
-                </div>
-                <div>
-                    <div class="card">
-                        <div class="title">
-                          <p class="heading">DISPLAY STATS</p>
-                          <p class="desc">Variables</p>
-                        </div>
-                        <div class="wrapper">
-                          <div class="color black">Overflow<span class="hex">True</span></div>
-                          <div class="color eerie-black">Distance<span class="hex">Random</span></div>
-                          <div class="color chinese-black">Pressure<span class="hex">Random</span>
-                        </div>
-                      </div>
-                </div>
-                
-                
-              </div>
-              
+        <div class="text">Analytics</div>
+        <div class="analytics-content">
+            <!-- Chart container -->
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
         </div>
-        <script src="cylinder.js"></script>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="analytics.js"></script>
     <script>
         function logoff(){
             window.location.href = "index.html";

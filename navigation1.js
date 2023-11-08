@@ -50,9 +50,13 @@ function displayErrorMessage(message) {
 }
 
 function updateWeight(weight) {
-    const weightDisplayElement = document.getElementById("weight-display");
+    const weightDisplayElement = document.querySelector(".cute-box");
+    weightDisplayElement.classList.add("cute-box-active");
     weightDisplayElement.textContent = weight + " grams";
-}
+    setTimeout(() => {
+      weightDisplayElement.classList.remove("cute-box-active");
+    }, 2000); 
+  }
 
 
 function updateData() {
@@ -70,4 +74,17 @@ function updateData() {
 	}
 }
 
-// setInterval(updateData, 1000); 
+const checkboxInput = document.getElementById('checkboxInput');
+let intervalId; 
+
+checkboxInput.addEventListener('change', function() {
+  if (this.checked) {
+    intervalId = setInterval(updateData, 1000);
+    console.log('Checkbox is checked, execute your code here.');
+  } else {
+    clearInterval(intervalId);
+    console.log('Checkbox is unchecked, stopping the code.');
+  }
+});
+
+
