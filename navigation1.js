@@ -86,5 +86,11 @@ checkboxInput.addEventListener('change', function() {
     console.log('Checkbox is unchecked, stopping the code.');
   }
 });
+var overflowValue = true; 
+var distanceValue = 3.5;  
+var pressureValue = 7.2; 
 
 
+document.getElementById("overflow").querySelector(".hex").textContent = overflowValue.toString();
+document.getElementById("distance").querySelector(".hex").textContent = distanceValue.toFixed(2).toString()+" m"; 
+document.getElementById("pressure").querySelector(".hex").textContent = pressureValue.toFixed(2).toString()+" bar"; 
