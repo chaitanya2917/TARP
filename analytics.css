@@ -23,10 +23,19 @@ body {
     padding: 20px;
 }
 
-/* Style for the chart container */
-.chart-container {
-    width: 80%;
-    margin: 0 auto;
+/* Style for the chart containers */
+.chart-container,
+.pie-chart-container {
+    width: 35%;
+    margin: 0 2.5%;
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Customize your chart style as needed */
+.analytics-content{
+    display:flex;
+}

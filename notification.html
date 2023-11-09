@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="navigation1.css">
-    <link rel="stylesheet" href="analytics.css">
+    <link rel="stylesheet" href="notification.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -83,18 +83,14 @@
         </div>
     </nav>
     <section class="home">
-        <div class="text">Waste Management Analytics</div>
-        <div class="analytics-content">
-            <div class="chart-container" onclick="bargraph()">
-                <canvas id="barChart"></canvas>
-            </div>
-            <div class="pie-chart-container">
-                <canvas id="pieChart"></canvas>
-            </div>
+        <div class="notifications">
+            <h2>Notifications</h2>
+            <ul id="notification-list">
+                <!-- Notifications will be dynamically added here -->
+            </ul>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="analytics.js"></script>
+    <script src="notification.js"></script>
     <script>
         function logoff(){
             window.location.href = "index.html";

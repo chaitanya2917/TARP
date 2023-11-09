@@ -415,7 +415,7 @@ body.dark .switch::before{
   .wrapper {
     margin: 2rem auto;
     width: 250px;
-    font-size: small;
+    font-size: medium;
   }
   
   .title {
@@ -494,4 +494,3 @@ body.dark .switch::before{
   }
  
   
- 

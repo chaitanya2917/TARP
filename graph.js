@@ -16,7 +16,6 @@ const categoryLabels = [
 
 document.addEventListener("DOMContentLoaded", function () {
     const ctxBar = document.getElementById("barChart").getContext("2d");
-    const ctxPie = document.getElementById("pieChart").getContext("2d");
 
     // Historical waste management data for different categories
     const category1Data = [10, 20, 15, 25, 30, 18, 12, 22, 27, 17, 28, 32];
@@ -58,28 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ],
     };
 
-    const pieData = {
-        labels: categoryLabels,
-        datasets: [
-            {
-                data: [50, 30, 15, 25, 10, 20, 35, 45, 18, 12, 22, 27],
-                backgroundColor: [
-                    "#FF5733",
-                    "#33FF33",
-                    "#3366FF",
-                    "#FF9900",
-                    "#FF3366",
-                    "#66FF33",
-                    "#3366CC",
-                    "#CC9900",
-                    "#6633FF",
-                    "#FF3399",
-                    "#99FF33",
-                    "#33CCFF",
-                ],
-            },
-        ],
-    };
+    
 
     const barConfig = {
         type: "bar",
@@ -93,11 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     };
 
-    const pieConfig = {
-        type: "doughnut",
-        data: pieData,
-    };
+
 
     const barChart = new Chart(ctxBar, barConfig);
-    const pieChart = new Chart(ctxPie, pieConfig);
+    
 });
