@@ -92,6 +92,8 @@
         <div class="dashboard">
             <div class="container">
                 <div>
+                    <p class="heading1">BIN</p>
+                    <br>
                     <div class="cylinder">
                         <div class="fill-level" id="waste-level"></div>
                       </div>
@@ -107,7 +109,7 @@
                     <div class="card">
                         <div class="title">
                           <p class="heading">DISPLAY STATS</p>
-                          <p class="desc">Variables</p>
+                          <h3>Data</h3>
                         </div>
                         <div class="wrapper">
                             <div class="color black" id="overflow">IR sensor<span class="hex"></span></div>
@@ -138,10 +140,16 @@
         }
     </script>
     <script>
+        function notification(){
+            window.location.href = "notification.html";
+        }
+    </script>
+    <script>
         function home(){
             window.location.href = "index.html";
         }
     </script>
     <script type="module" src="navigation1.js"></script>
+    
 </body>
 </html>

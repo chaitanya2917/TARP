@@ -32,5 +32,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     checkWasteLevel();
 
-    // setInterval(checkWasteLevel, 5000);
+    // setInterval(checkWasteLevel, 1000);
 });

@@ -89,6 +89,13 @@ body.dark{
     color: var(--text-color);
     transition: var(--tran-02);
 }
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+    color: #fff;
+}
+
+
 .sidebar header{
     position: relative;
 
@@ -271,7 +278,7 @@ body.dark .switch::before{
     font-weight: bold;
     font-size: 1.5rem;
     color: var(--text-color);
-    padding: 8px 40px;
+    padding: 20px 40px;
 }
 
 .sidebar.close ~ .home{
@@ -291,6 +298,7 @@ body.dark .switch::before{
     height: 400px;
     background: #c3d7eb;
     border-radius: 10%;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     position: relative;
     overflow: hidden;
 }
@@ -312,6 +320,9 @@ body.dark .switch::before{
     width: 100px;
     height: 300px;
     background: #f2f2f2;
+    box-shadow: -3px 0px 26px -10px rgba(0,0,0,0.76);
+    -webkit-box-shadow: -3px 0px 26px -10px rgba(0,0,0,0.76);
+    -moz-box-shadow: -3px 0px 26px -10px rgba(0,0,0,0.76);
     border-radius: 10px;
     position: relative;
     margin: 0 auto;
@@ -324,6 +335,7 @@ body.dark .switch::before{
     width: 100%;
     background: #1875FF;
     border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     color: white;
   }
   
@@ -350,6 +362,9 @@ body.dark .switch::before{
     width: 50px;
     height: 30px;
     background-color: rgb(82, 82, 82);
+    box-shadow: -3px 0px 26px -10px rgba(0,0,0,0.76);
+    -webkit-box-shadow: -3px 0px 26px -10px rgba(0,0,0,0.76);
+    -moz-box-shadow: -3px 0px 26px -10px rgba(0,0,0,0.76);
     border-radius: 20px;
     cursor: pointer;
     transition-duration: .2s;
@@ -416,11 +431,19 @@ body.dark .switch::before{
     margin: 2rem auto;
     width: 250px;
     font-size: medium;
+    box-shadow: -3px 0px 26px 3px rgba(0,0,0,0.76);
+  -webkit-box-shadow: -3px 0px 26px 3px rgba(0,0,0,0.76);
+  -moz-box-shadow: -3px 0px 26px 3px rgba(0,0,0,0.76);
   }
   
   .title {
     text-align: center;
     color: #1b1b1b;
+  }
+  
+  body.dark .title{
+    text-align: center;
+    color: #ffffff;
   }
   
   .heading {
@@ -493,4 +516,15 @@ body.dark .switch::before{
     border-bottom-right-radius: 5px;
   }
  
-  
+  .heading1 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    position: relative;
+    margin-bottom: 6px;
+  }
+  body.dark .heading1{
+    text-align: center;
+    color: #ffffff;
+  }
+

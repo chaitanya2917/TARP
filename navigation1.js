@@ -68,6 +68,7 @@ function updateData() {
     updateWeight(weight);
 	if(wasteLevel > 80){
 		displayOverflowAlert();
+    
 	}
 	else{
 		displayErrorMessage("");
@@ -94,3 +95,10 @@ var pressureValue = 7.2;
 document.getElementById("overflow").querySelector(".hex").textContent = overflowValue.toString();
 document.getElementById("distance").querySelector(".hex").textContent = distanceValue.toFixed(2).toString()+" m"; 
 document.getElementById("pressure").querySelector(".hex").textContent = pressureValue.toFixed(2).toString()+" bar"; 
+
+
+
+
+//data.distance
+//data.object_flag
+//data.force
